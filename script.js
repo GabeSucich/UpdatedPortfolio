@@ -1,7 +1,6 @@
 
-
 $(document).ready(function(){
-    screen_switcher('home')
+    screen_switcher('portfolio')
     $('.sidenav').sidenav();
     var elem = document.querySelector('.carousel');
     var instance = M.Carousel.init(elem);
@@ -29,7 +28,7 @@ $(document).ready(function(){
         screen_switcher('resume')
     })
 
-    screen_switcher('home')
+    screen_switcher('portfolio')
   });
   
 

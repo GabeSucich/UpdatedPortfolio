@@ -7,6 +7,7 @@
 
 body {
     font-family: 'News Cycle', sans-serif;
+
 }
 
 .carousel-btns {
@@ -18,7 +19,13 @@ body {
 }
 
 .info-description {
-    box-shadow: blur 0px 0px 5px 5px darkgray;
+    font-size: 14px;
+    overflow: scroll;
+}
+
+.info-header {
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .larger{
@@ -59,11 +66,8 @@ body {
 }
 .home-btn {
     font-size: small;
-    width: 25%;
     margin-top: 5%;
 }
-
-
 
 @media only screen and (max-width: 600px) {
 
@@ -82,15 +86,25 @@ body {
     bottom: 80px;
 }
 .img1 {
-    margin-top: 10px;
+    margin-top: 3%;
 }
 
 .img2 {
-    margin-top: 10px;
+    margin-top: 3%;
 }
 
 .img3 {
-    margin-top: 10px;
+    margin-top: 3%;
 }
 
+}
+
+@media only screen and (min-width: 993px) {
+.sidenav {
+    width: 25% !important;
+}
+
+.container {
+    margin-left: 25% !important;
+}
 }

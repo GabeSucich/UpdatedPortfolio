@@ -16,7 +16,7 @@
 
     <div class="container grey lighten-3">
 
-        <ul id="slide-out" class="sidenav sidenav blue darken-4">
+        <ul id="slide-out" class="sidenav sidenav-fixed blue darken-4">
             <div class="right-align hide-on-large-only" style="padding: 2%">
                 <a id="close-btn" class="btn-floating btn-medium waves-effect waves-light grey darken-1"><i
                         class="material-icons sidenav-close">close</i></a>
@@ -31,25 +31,34 @@
                     </div>
                 </div>
             </li>
-
+            <li>
+                <a class="waves-effect white-text" href="#"><span class="link">About</span></a>
+            </li>
             <li>
                 <div class="divider"></div>
             </li>
             <li><a target="_blank" class="waves-effect white-text"
-                    href="https://www.linkedin.com/in/gabriel-sucich-6a28a71a8/"><span class="link">LinkedIn</span></a></li>
-            <li><a target="_blank" class="waves-effect white-text" href="https://github.com/GabeSucich"><span class="link">Github</span></a></li>
+                    href="https://www.linkedin.com/in/gabriel-sucich-6a28a71a8/"><span class="link">LinkedIn</span></a>
+            </li>
+            <li><a target="_blank" class="waves-effect white-text" href="https://github.com/GabeSucich"><span
+                        class="link">Github</span></a>
+            </li>
             <li>
-                <a target="_blank" class="waves-effect white-text" href="../../Resume.pdf"><span class="link">Resume</span></a> 
+                <a target="_blank" class="waves-effect white-text" href="../../Resume.pdf"><span
+                        class="link">Resume</span></a>
             </li>
         </ul>
 
         <div id='menu-btn' class="left-align" style="padding: 2%">
             <a data-target="slide-out"
-                class="btn-floating btn-medium waves-effect waves-light blue darken-4 sidenav-trigger"
+                class="btn-floating btn-medium waves-effect waves-light blue darken-4 sidenav-trigger hide-on-large-only"
                 style="opacity:70%"><i class="material-icons">menu</i></a>
         </div>
 
-        <main id="home" class="hidden">
+        <main id="about">
+        </main>
+
+        <main id="portfolio" class="hidden">
             <div class="carousel">
                 <a data-project="0" class="carousel-item" href="#one!"><img class="larger"
                         src="Assets/miles-carousel.png"></a>
@@ -60,7 +69,8 @@
                 <a data-project="3" class="carousel-item" href="#four!"><img class="larger"
                         src="Assets/password-carousel.png"></a>
             </div>
-            <p id="swipe-prompt" class="center-align">Swipe/toggle through different projects, and click a project image to read more</p>
+            <p id="swipe-prompt" class="center-align">Swipe/toggle through different projects, and click a project image
+                to read more</p>
             <div class="carousel-btns center">
                 <a id="next" class="btn waves-effect white black-text darken-text-2 hide-on-small-only">Prev</a>
                 <a id="previous" class="btn waves-effect white black-text darken-text-2 hide-on-small-only">Next</a>
@@ -68,26 +78,51 @@
         </main>
 
         <main id="0" class="info hidden">
-            <header class="center-align info-header">Project Miles</header>
             <div class="row">
-                <div class="col s12 m7 l7 push-m5 push-l5 info-description">
-                    
+                <div class="col s12 m12 l12 info-description">
+
+                    <header class="center-align info-header">Project Miles</header>
+
+                    <p class="info-paragraph">
+                        "Project Miles" is the result of my first experience working on a coding team. Designed for
+                        young adolescents first starting
+                        to become conscious of the importance of nutrition and exercise, this application aims to engage
+                        young users to make healthier choices
+                        in their meals and activities.
+
+                        The project required responses from several different server-side API's to be integrated into a
+                        youth-friendly interface which gamified
+                        the process of making healthy choices. As the member of the team with the most experience with
+                        programming logic, I was delegated to code
+                        API response collection and integration on the back-end. However, due to newness of the team to
+                        coding, I ended up contributing heavily to the
+                        front-end as well.
+
+                        Though the process was chaotic, as a silver lining, I gained much experience with front- and
+                        back-end coding, and my contributions are rich throughout
+                        all of the source code!
+                    </p>
+
                     <div class="center">
-                        <a class="deployed" target="_bank" href="https://gabesucich.github.io/Project1_CGJK/">See deployed application</a>
+                        <a class="deployed" target="_blank" href="https://gabesucich.github.io/Project1_CGJK/">See
+                            deployed application</a>
                     </div>
                     <div class="center">
-                        <a class="btn waves-effect white black-text darken-text-2 home-btn">Return</a>
+                        <a class="github" target="_blank" href="https://github.com/GabeSucich/Project1_CGJK">Project Repository</a>
+                    </div>
+                    <div class="center">
+                        <a class="btn waves-effect white black-text darken-text-2 home-btn">Back to Portfolio</a>
                     </div>
                 </div>
-                <div class="col s12 m5 l5 pull-m7 pull-l7 images">
+                <div class="col s12 m12 l12 images valign-wrapper">
                     <div class="row">
-                        <div class="col s6 m12 l12 img1">
+                        <div class="col s12 m6 l6 img1">
                             <img class="responsive-img" src="Assets/miles1.png">
                         </div>
-                        <div class="col s6 m12 l12 img2">
+                        <div class="col s12 m6 l6 img2">
                             <img class="responsive-img" src="Assets/miles2.png">
                         </div>
-                        <div class="col s6 offset-s3 m12 l12 img3">
+                        <div class="col s12 m6 offset-m3 l6 offset-l3 img3">
                             <img class="responsive-img" src="Assets/miles3.png">
                         </div>
                     </div>
@@ -96,22 +131,39 @@
 
         </main>
         <main id="1" class="info">
-            <header class="center-align info-header">Weather Dashboard</header>
             <div class="row">
-                <div class="col s12 m7 l7 push-m5 push-l5 info-description">
+                <div class="col s12 m12 l12 info-description">
+
+                    <header class="center-align info-header">Weather Dashboard</header>
+                    <p class="info-paragraph">
+                        Here is a basic weather dashboard. It utilizes a weather-forecast API to display weather
+                        information to the user on the dashboard,
+                        and stores search queries in local storage for future reference.
+
+                        As an assignment early in my programming education, the task was an introduction to the use of
+                        API's and local storage.
+                        To stretch the confines of the assignment with my limited experience, I added case sensitivity
+                        to search queries, duplicate recognition,
+                        and front-end polishing for an attractive UI.
+                    </p>
                     <div class="center">
-                    <a class="deployed" target="_bank" href="https://gabesucich.github.io/Hw06_WeatherDashboard/">See deployed application</a>
+                        <a class="deployed" target="_blank"
+                            href="https://gabesucich.github.io/Hw06_WeatherDashboard/">See deployed application</a>
                     </div>
                     <div class="center">
-                        <a class="btn waves-effect white black-text darken-text-2 home-btn">Return</a>
+                        <a class="github" target="_blank"
+                            href="https://github.com/GabeSucich/Hw06_WeatherDashboard">Project Repository</a>
+                    </div>
+                    <div class="center">
+                        <a class="btn waves-effect white black-text darken-text-2 home-btn">Back to Portfolio</a>
                     </div>
                 </div>
-                <div class="col s12 m5 l5 pull-m7 pull-l7 images">
+                <div class="col s12 m12 l12 images valign-wrapper">
                     <div class="row">
-                        <div class="col s6 m12 l12 img1">
+                        <div class="col s12 m6 l6 img1">
                             <img class="responsive-img" src="Assets/weather1.png">
                         </div>
-                        <div class="col s6 m12 l12 img2">
+                        <div class="col s12 m6 l6 img2">
                             <img class="responsive-img" src="Assets/weather2.png">
                         </div>
                     </div>
@@ -119,22 +171,41 @@
             </div>
         </main>
         <main id="2" class="info">
-            <header class="center-align info-header">Code Quiz</header>
             <div class="row">
-                <div class="col s12 m7 l7 push-m5 push-l5 info-description">
+                <div class="col s12 m12 l12 info-description">
+                    <header class="center-align info-header">Code Quiz</header>
+                    <p class="info-paragraph">
+                        This rudimentary "code quiz" was less a task to come up with engaging programming questions, and
+                        more an exercise in
+                        the newly developed skill of using JavaScript to dynamically update the DOM from local storage
+                        and from user input. Additionally,
+                        this application features a consistent timer which is responsive to user input as well.
+
+                        Though limited in its function by the fact that I developed it with only two weeks of front-end
+                        coding experience, the code for this application
+                        displays an attempt to be creative and structured with (retrospectively VERY) limited knowledge.
+                        Features like the modular-function flow of the gameplay and randomization
+                        of answer-choice ordering reflect my early attempts stretch current capabilities and model the
+                        structure of my simpler projects after more complex projects to come.
+
+                    </p>
                     <div class="center">
-                    <a class="deployed" target="_bank" href="https://gabesucich.github.io/Hw04_CodeQuiz/">See deployed application</a>
+                        <a class="deployed" target="_blank" href="https://gabesucich.github.io/Hw04_CodeQuiz/">See
+                            deployed application</a>
                     </div>
                     <div class="center">
-                        <a class="btn waves-effect white black-text darken-text-2 home-btn">Return</a>
+                        <a class="github" target="_blank" href="https://github.com/GabeSucich/Hw04_CodeQuiz">Project Repository</a>
+                    </div>
+                    <div class="center">
+                        <a class="btn waves-effect white black-text darken-text-2 home-btn">Back to Portfolio</a>
                     </div>
                 </div>
-                <div class="col s12 m5 l5 pull-m7 pull-l7 images">
+                <div class="col s12 m12 l12 images">
                     <div class="row">
-                        <div class="col s6 m12 l12 img1">
+                        <div class="col s12 m6 l6 img1">
                             <img class="responsive-img" src="Assets/codequiz1.png">
                         </div>
-                        <div class="col s6 m12 l12 img2">
+                        <div class="col s12 m6 l6 img2">
                             <img class="responsive-img" src="Assets/codequiz2.png">
                         </div>
                     </div>
@@ -142,22 +213,39 @@
             </div>
         </main>
         <main id="3" class="info">
-            <header class="center-align info-header">Password Generator</header>
             <div class="row">
-                <div class="col s12 m7 l7 push-m5 push-l5 info-description">
+                <div class="col s12 m12 l12 info-description">
+
+                    <header class="center-align info-header">Password Generator</header>
+                <p class="info-paragraph">
+                    This password generator was a project meant to introduce JavaScript syntax and programming logic,
+                    and was completed only two days after my introduction to JavaScript. The user was prompted about
+                    different criteria
+                    to include in the password, as well as the length. Though basic, this application includes extensive
+                    user validation and a polished user interface. Additionally, the
+                    modular programming is a significantly better alternative to what may have been a new programmer's
+                    instinct to hard code this application.
+
+                </p>
                     <div class="center">
-                    <a class="deployed" target="_bank" href="https://gabesucich.github.io/Homework03_PasswordGenerator/">See deployed application</a>
+                        <a class="deployed" target="_blank"
+                            href="https://gabesucich.github.io/Homework03_PasswordGenerator/">See deployed
+                            application</a>
                     </div>
                     <div class="center">
-                        <a class="btn waves-effect white black-text darken-text-2 home-btn">Return</a>
+                        <a class="github" target="_blank"
+                            href="https://github.com/GabeSucich/Homework03_PasswordGenerator">Project Repository</a>
+                    </div>
+                    <div class="center">
+                        <a class="btn waves-effect white black-text darken-text-2 home-btn">Back to Portfolio</a>
                     </div>
                 </div>
-                <div class="col s12 m5 l5 pull-m7 pull-l7 images">
+                <div class="col s12 m12 l12 images">
                     <div class="row">
-                        <div class="col s6 m12 l12 img1">
+                        <div class="col s12 m6 l6 img1">
                             <img class="responsive-img" src="Assets/password1.png">
                         </div>
-                        <div class="col s6 m12 l12 img2">
+                        <div class="col s12 m6 l6 img2">
                             <img class="responsive-img" src="Assets/password2.png">
                         </div>
                     </div>

@@ -25,6 +25,10 @@ $(document).ready(function(){
         screen_switcher(carousel_id)
     })
 
+    $('#resume-click').on("click", function() {
+        screen_switcher('resume')
+    })
+
     screen_switcher('home')
   });
   

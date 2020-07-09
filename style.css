@@ -36,6 +36,9 @@ body {
     
 }
 
+.link {
+    font-size: larger;
+}
 .hidden {
     display: none;
 }
